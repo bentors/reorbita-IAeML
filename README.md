@@ -75,18 +75,17 @@ O threshold foi calibrado via **curva Precision-Recall** para priorizar a detec�
 ## Estrutura do Repositório
 
 ```
-reorbita-gs-iaml/
-│
-├── README.md                          ← este arquivo
-├── requirements.txt                   ← dependências Python
-├── REORBITA_IA_ML.ipynb              ← notebook principal (executável)
-│
+reorbita-IAeML/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── reorbita-logo.png
+├── REORBITA_IA_ML.ipynb
 ├── data/
-│   ├── daily_solar_data.csv           ← dataset original (NOAA via Kaggle)
-│   └── dataset_telemetria_satelites.csv  ← gerado ao rodar o notebook (Digital Twin)
-│
+│   ├── daily_solar_data.csv
+│   └── dataset_telemetria_satelites.csv
 └── models/
-    └── reorbita_solar_model.pkl       ← modelo exportado via joblib
+    └── reorbita_solar_model.pkl
 ```
 
 ---
