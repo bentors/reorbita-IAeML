@@ -1,0 +1,30 @@
+# Ambiente virtual
+venv/
+.env
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.log
+*.tmp

@@ -1,10 +1,19 @@
-# REORBITA — Inteligência Orbital com Machine Learning
+<p align="center">
+  <img src="reorbita-logo.png" alt="REORBITA Logo" width="160"/>
+</p>
 
-> *"Construímos um cemitério a 400 km de altura. A REORBITA transforma esse cemitério em uma oficina."*
+<h1 align="center">REORBITA — Inteligência Orbital com Machine Learning</h1>
 
-**Global Solution 2026.1 · FIAP — Faculdade de Informática e Administração Paulista**  
-**Disciplina:** Inteligência Artificial e Machine Learning  
-**Turma:** 3ESS
+<p align="center">
+  <em>"Construímos um cemitério a 400 km de altura. A REORBITA transforma esse cemitério em uma oficina."</em>
+</p>
+
+<p align="center">
+  <strong>Global Solution 2026.1 · FIAP — Faculdade de Informática e Administração Paulista</strong><br>
+  Disciplina: Inteligência Artificial e Machine Learning · Turma: 3ESS
+</p>
+
+---
 
 ---
 
