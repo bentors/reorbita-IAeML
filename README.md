@@ -195,7 +195,9 @@ Modelo exportado (.pkl) + Alertas por satélite (.csv)
 
 ### Por que Regressão Logística venceu o Random Forest?
 
-O Random Forest — modelo mais complexo — obteve **F1 = 0.000 na classe Alto** durante os testes. O motivo é **concept drift**: o período de teste (2023–2024) é atipicamente ativo, com frequência de flares X 3x acima da média histórica. O Random Forest memorizou os padrões dos ciclos anteriores e não generalizou para esse novo regime. A Regressão Logística, por aprender relações lineares mais simples, mostrou maior robustez à mudança de distribuição.
+O Random Forest — modelo mais complexo — obteve **F1 = 0.000 na classe Alto** durante os testes: identificou zero flares X corretamente no período de avaliação. O motivo é **concept drift**: o período de teste (2023–2024) coincide com o pico do Ciclo Solar 25, o mais intenso das últimas décadas, com frequência de flares X 3x acima da média histórica. O Random Forest memorizou os padrões dos ciclos anteriores e falhou em generalizar para esse novo regime de atividade solar — comportamento típico de modelos de alta capacidade diante de mudanças de distribuição.
+
+A Regressão Logística, por aprender relações lineares mais simples e generalizáveis, mostrou maior robustez à mudança de distribuição. Combinada ao threshold calibrado em 0.46 via curva Precision-Recall, alcançou **F1 Weighted de 0.753** e **recall de 44%** na classe Alto — detectando 8 dos 18 flares X do período de teste com 24 horas de antecedência. Em produção, o retreino periódico do modelo com dados recentes é o mecanismo previsto para mitigar o concept drift de forma contínua.
 
 ### Por que SMOTE apenas no treino?
 
